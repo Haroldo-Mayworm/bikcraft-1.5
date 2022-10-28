@@ -6,36 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
   <title>Bikcraft 1.5</title>
 </head>
 
 <body>
   <header class="header">
-    <img src="img/bikcraft.svg" alt="bikcraft logo">
+    <img class="logo" src="img/bikcraft.svg" alt="bikcraft logo" logo-anime="500">
     <nav>
       <ul class="menu">
-        <li><a href="/">sobre</a></li>
-        <li><a href="/">produtos</a></li>
-        <li><a href="/">lojas</a></li>
-        <li><a href="/">contato</a></li>
+        <li data-anime="200"><a href="/">sobre</a></li>
+        <li data-anime="300"><a href="/">produtos</a></li>
+        <li data-anime="400"><a href="/">lojas</a></li>
+        <li data-anime="500"><a href="/">contato</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <article class="conteudo">
-      <section class="intro-texto">
+      <section class="intro-texto"  data-anime="300">
         <H2>Bicicletas Feitas a Mão</H2>
         <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
           da marca.</p>
         <a class="btn" href="/">ver mais!</a>
       </section>
-      <section class="intro-img">
+      <section class="intro-img"  data-anime="500">
         <img src="img/bicicleta.jpg" alt="bicicleta">
       </section>
     </article>
     <article class="conteudo">
-      <h2 class="vantagem-titulo">vantagens bikcraft</h2>
-      <ul class="vantagem-lista">
+      <h2 class="vantagem-titulo" data-anime="300">vantagens bikcraft</h2>
+      <ul class="vantagem-lista" data-anime="500">
         <li class="vantagem-item">
           <img src="img/eletrica.svg" alt="">
           <h3>Motor Elétrico</h3>
@@ -57,6 +58,10 @@
   <footer class="footer">
     <p>Bikcraft. Alguns Direitos Reservados.</p>
   </footer>
+
+  <script src="javascript/plugins/simple-anime.js"></script>
+  <script src="javascript/script.js"></script>
+
 </body>
 
 </html>

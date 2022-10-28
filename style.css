@@ -156,3 +156,23 @@ p {
   padding: 25px 0px;
   color: #000;
 }
+
+.js [data-anime] {
+  opacity: 0;
+  transform: translate3d(-300px, 0, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 800ms, transform 800ms;
+}
+
+.js [logo-anime] {
+  opacity: 0;
+}
+
+.js .animelogo {
+  opacity: 1;
+  transition: opacity 800ms;
+}
